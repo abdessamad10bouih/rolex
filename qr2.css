@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Syncopate&display=swap');
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+::-webkit-scrollbar {
+    width: 10px;
+    height: 20px;
+}
+::-webkit-scrollbar-thumb {
+    background: white; 
+    border-radius: 49% 51% 50% 50% / 49% 51% 50% 50%  ;
+  }
+
+header {
+    width: 100%;
+    height: 120vh;
+    background-size: cover;
+    position: relative;
+    padding: 0 0 0 5%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    list-style: none;
+    margin: 40px;
+}
+
+nav ul li a {
+    padding: 0 30px;
+    text-decoration: none;
+    color: white;
+
+}
+
+.logo img {
+    width: 100px;
+}
+
+.search input {
+    width: 150px;
+    height: 40px;
+    margin-top: 35px;
+    border-radius: 25px;
+    border: none;
+    background-color: transparent;
+}
+
+.search a {
+    background-color: aliceblue;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    border-radius: 25px;
+    background-color: black;
+    box-shadow: -13px 16px 34px -18px rgba(255, 255, 255, 0.68);
+}
+
+.back {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    opacity: 0.9;
+    filter: blur(2px);
+
+}
+
+.content {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.headline h1 {
+    font-size: 60px;
+    font-weight: 600;
+
+}
+
+.headline h2 {
+    font-size: 20px;
+    font-weight: 200;
+}
+
+@media (min-aspect-ratio: 16/9) {
+    .back {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9) {
+    .back {
+        width: auto;
+        height: 100%;
+    }
+}
+/*for gif grid*/
+.forgifgrid{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+.gifvid h3{
+    margin-bottom: 20px;
+}
+.vide{
+    height: 93%;
+    margin-right: 125px;
+    background: url(./images/8074e8fed073faea6caf3eb52efa7a7d.gif) no-repeat center;
+    background-size: auto;
+}
+/*info*/
+.info{
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+}
+.txt-info h1{
+    font-size: 30px;
+    text-align: start;
+    font-family: 'Syncopate';
+    margin-bottom: 50px;
+}
+.txt-info h3{
+    margin-bottom: 30px;
+    margin-left: 80px;
+}
+.txt-info h3::before{
+    content: '';
+    position: relative;
+    border: 4px solid white;
+    border-radius: 20px;
+    right: 20px;
+}
+.txt-info p{
+    margin-bottom: 20px;
+    margin-left: 58px;
+    font-weight: 400;
+}
+
+.roleximage{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.firstimage h2{
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    top: 97%;
+}
+.firstimage{
+    background: url(./images/watchqr.png) no-repeat center;
+    background-size: contain;
+}
+.image-info h1{
+    font-size: 20px;
+    letter-spacing: 5px;
+    margin-bottom: 40px;
+}
+.image-info h2{
+    font-size: 15px;
+    letter-spacing: 5px;
+    font-weight: 800;
+    margin-bottom: 40px;
+}
+.image-info h3{
+    font-size: 18px;
+    font-weight: 800;
+}
+.image-info h5{
+    margin-bottom: 40px;
+}
+.image-info a{
+    padding: 5px 40px;
+    border: 1px solid white;
+    margin-left: 25%;
+    position: relative;
+    top: 90px;
+    border-radius: 20px;
+    color: white;
+}
